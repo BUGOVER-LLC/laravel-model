@@ -1,5 +1,6 @@
 {
-  "name": "vendor_name/repository",
+  "name": "nucleus/repository",
+  "version": "1.0.0",
   "description": "description",
   "minimum-stability": "stable",
   "license": "proprietary",
