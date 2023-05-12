@@ -1,0 +1,35 @@
+{
+  "name": "vendor_name/repository",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "type": "service-package",
+  "authors": [
+    {
+      "name": "artak",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "staudenmeir/belongs-to-through": "^2.12.1",
+    "staudenmeir/eloquent-json-relations": "^1.8",
+    "staudenmeir/eloquent-has-many-deep": "^1.18",
+    "laravel/sanctum": "^3.0.0"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
+  },
+  "require_dev": {
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+      ]
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Service\\Models\\": "src/"
+    }
+  }
+}
