@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Service\Models\Entity;
+namespace Nucleus\Models\Entity;
 
 use Illuminate\Database\Eloquent\Model;
-use Service\Models\Traits\ScopeHelpers;
+use Nucleus\Models\Traits\ScopeHelpers;
 
 /**
  * Class ServiceModel

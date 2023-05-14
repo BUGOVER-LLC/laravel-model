@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Service\Models\Entity;
+namespace Nucleus\Models\Entity;
 
 use App\vendor\Models\PersonalAccessToken;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
-use Service\Models\Traits\ScopeHelpers;
+use Nucleus\Models\Traits\ScopeHelpers;
 use Service\Role\Traits\HasRoles;
 
 /**

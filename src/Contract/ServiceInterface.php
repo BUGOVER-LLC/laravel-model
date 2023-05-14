@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Service\Models\Contract;
+namespace Nucleus\Models\Contract;
 
 use Service\GeoIP\Location;
 

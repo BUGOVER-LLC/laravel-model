@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Service\Models\Traits;
+namespace Nucleus\Models\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use JetBrains\PhpStorm\Pure;
-use Service\Models\Custom\HasCustomRelations;
-use Service\Models\Entity\ServiceModel;
+use Nucleus\Models\Custom\HasCustomRelations;
+use Nucleus\Models\Entity\ServiceModel;
 use Service\Repository\Contracts\BaseRepositoryContract;
 use Service\Role\Traits\HasFranchise;
 use Service\Role\Traits\HasModules;

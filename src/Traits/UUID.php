@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Service\Models\Traits;
+namespace Nucleus\Models\Traits;
 
 use Exception;
 use Ramsey\Uuid\Uuid as RamseyUuid;

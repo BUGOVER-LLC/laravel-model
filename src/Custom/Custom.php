@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Service\Models\Custom;
+namespace Nucleus\Models\Custom;
 
 use Closure;
 use Illuminate\Database\Eloquent\Builder;
