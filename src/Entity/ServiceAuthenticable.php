@@ -8,7 +8,6 @@ use App\vendor\Models\PersonalAccessToken;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticable;
 use Illuminate\Notifications\Notifiable;
-use Laravel\Sanctum\HasApiTokens;
 use Nucleus\Models\Traits\ScopeHelpers;
 use Service\Role\Traits\HasRoles;
 
@@ -19,7 +18,6 @@ use Service\Role\Traits\HasRoles;
 class ServiceAuthenticable extends Authenticable
 {
     use ScopeHelpers;
-    use HasApiTokens;
     use Notifiable;
     use HasRoles;
 
