@@ -19,14 +19,6 @@
   "require-dev": {
     "roave/security-advisories": "dev-latest"
   },
-  "require_dev": {
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-      ]
-    }
-  },
   "autoload": {
     "psr-4": {
       "Nucleus\\Models\\": "src/"
