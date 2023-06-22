@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticable;
 use Illuminate\Notifications\Notifiable;
 use Nucleus\Models\Traits\ScopeHelpers;
-use Service\Role\Traits\HasRoles;
+use Nucleus\Role\Traits\HasRoles;
 
 /**
  * Class ServiceAuthenticable
