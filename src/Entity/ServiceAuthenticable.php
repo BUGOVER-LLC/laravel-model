@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Nucleus\Models\Entity;
 
-use App\vendor\Models\PersonalAccessToken;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticable;
 use Illuminate\Notifications\Notifiable;
 use Nucleus\Models\Traits\ScopeHelpers;
@@ -45,15 +43,5 @@ class ServiceAuthenticable extends Authenticable
     public function routeNotificationForFcm(): ?string
     {
         return $this->fcm()->first()->key ?? null;
-    }
-
-    /**
-     * Get the access tokens that belong to model.
-     *
-     * @return HasMany
-     */
-    public function tokens(): HasMany
-    {
-        return $this->hasMany(PersonalAccessToken::class, 'user_id', 'user_id');
     }
 }

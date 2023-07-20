@@ -287,4 +287,9 @@ trait ScopeHelpers
 
         return $query;
     }
+
+    public function scopeHelpers()
+    {
+
+    }
 }
