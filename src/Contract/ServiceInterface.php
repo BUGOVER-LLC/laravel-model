@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Service\Models\Contract;
+namespace Bugover\Model\Contract;
 
 use Service\GeoIP\Location;
 

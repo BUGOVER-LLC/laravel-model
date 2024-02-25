@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Service\Models\Traits;
+namespace Bugover\Model\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use JetBrains\PhpStorm\Pure;
-use Service\Models\Custom\HasCustomRelations;
+use Bugover\Model\Custom\HasCustomRelations;
 use Service\Repository\Contracts\BaseRepositoryContract;
 use Service\Role\Traits\HasFranchise;
 use Service\Role\Traits\HasModules;

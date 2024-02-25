@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Service\Models\Traits;
+namespace Bugover\Model\Traits;
 
 use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Support\Str;

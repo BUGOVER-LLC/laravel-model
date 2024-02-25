@@ -2,13 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Service\Models\Entity;
+namespace Bugover\Model\Entity;
 
 use Illuminate\Foundation\Auth\User as Authenticable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Passport\HasApiTokens;
-use Service\Models\Traits\ScopeHelpers;
-use Service\Role\Traits\HasRoles;
+use Bugover\Model\Traits\ScopeHelpers;
 
 /**
  * Class ServiceAuthenticable

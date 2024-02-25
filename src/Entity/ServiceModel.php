@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Service\Models\Entity;
+namespace Bugover\Model\Entity;
 
 use Illuminate\Database\Eloquent\Model;
-use Service\Models\Traits\ScopeHelpers;
+use Bugover\Model\Traits\ScopeHelpers;
 
 /**
  * Class ServiceModel

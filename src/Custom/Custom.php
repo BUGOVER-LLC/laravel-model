@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Service\Models\Custom;
+namespace Bugover\Model\Custom;
 
 use Closure;
 use Illuminate\Database\Eloquent\Builder;
