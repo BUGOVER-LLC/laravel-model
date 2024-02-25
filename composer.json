@@ -1,0 +1,35 @@
+{
+  "name": "bugover/model",
+  "version": "1.0.0",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "type": "service-package",
+  "authors": [
+    {
+      "name": "artak",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "staudenmeir/belongs-to-through": "^2.15.1",
+    "staudenmeir/eloquent-json-relations": "^1.9.1",
+    "staudenmeir/eloquent-has-many-deep": "^1.19.3"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
+  },
+  "require_dev": {
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+      ]
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Bugover\\Model\\": "src/"
+    }
+  }
+}
