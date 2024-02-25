@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Bugover\Model\Traits;
 
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-
 use Spatie\Permission\Models\Role;
 
 use function count;
@@ -52,6 +51,7 @@ trait HasFranchise
 
     /**
      * @return mixed
+     * @throws \JsonException
      */
     public function franchiseModuleHasRoles(): mixed
     {

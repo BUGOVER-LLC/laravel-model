@@ -9,10 +9,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use JetBrains\PhpStorm\Pure;
-use Bugover\Model\Custom\HasCustomRelations;
 use Service\Repository\Contracts\BaseRepositoryContract;
-use Bugover\Model\Traits\HasFranchise;
-use Bugover\Model\Traits\HasModules;
 use Staudenmeir\EloquentHasManyDeep\HasRelationships;
 use Staudenmeir\EloquentJsonRelations\HasJsonRelationships;
 use Znck\Eloquent\Traits\BelongsToThrough;
@@ -29,11 +26,10 @@ trait ScopeHelpers
     use Touchy;
     use BelongsToThrough;
     use HasJsonRelationships;
-    use HasCustomRelations;
     use HasRelationships;
     use HasModules;
-    use HasFactory;
     use HasFranchise;
+    use HasFactory;
 
     /**
      * @var string|BaseRepositoryContract

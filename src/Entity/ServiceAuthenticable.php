@@ -8,6 +8,7 @@ use Illuminate\Foundation\Auth\User as Authenticable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Passport\HasApiTokens;
 use Bugover\Model\Traits\ScopeHelpers;
+use Spatie\Permission\Traits\HasRoles;
 
 /**
  * Class ServiceAuthenticable
@@ -26,6 +27,7 @@ class ServiceAuthenticable extends Authenticable
      * @var string[]
      */
     public $socketAuth = [];
+
     /**
      * @var string
      */
