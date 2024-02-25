@@ -1,6 +1,6 @@
 {
   "name": "bugover/laravel-model",
-  "version": "4.3.0",
+  "version": "4.4.0",
   "description": "description",
   "minimum-stability": "stable",
   "license": "proprietary",
@@ -17,11 +17,11 @@
     "staudenmeir/eloquent-json-relations": "^1.9.1",
     "staudenmeir/eloquent-has-many-deep": "^1.19.3",
     "spatie/laravel-permission": "^6.0.0",
-    "laravel/framework": "^9.0.0|^10.0.0",
     "laravel/passport": "^10.0.0|^11.0.0"
   },
   "require-dev": {
-    "roave/security-advisories": "dev-latest"
+    "roave/security-advisories": "dev-latest",
+    "laravel/framework": "^9.0.0|^10.0.0"
   },
   "require_dev": {
   },
