@@ -4,8 +4,9 @@ declare(strict_types=1);
 
 namespace Bugover\Model\Entity;
 
-use Illuminate\Database\Eloquent\Model;
+use Bugover\Model\Attribute\ModelEntity;
 use Bugover\Model\Traits\ScopeHelpers;
+use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class ServiceModel
@@ -14,6 +15,7 @@ use Bugover\Model\Traits\ScopeHelpers;
  * @method static first($attributes = ['*'])
  */
 #[\AllowDynamicProperties]
+#[ModelEntity()]
 class ServiceModel extends Model
 {
     use ScopeHelpers;
