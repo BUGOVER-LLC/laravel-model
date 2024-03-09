@@ -20,7 +20,7 @@ trait Uuid
      *
      * @throws Exception
      */
-    public static function boot(): void
+    protected static function boot(): void
     {
         parent::boot();
 
