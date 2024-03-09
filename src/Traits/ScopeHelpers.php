@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace Bugover\Model\Traits;
 
+use Bugover\Model\Entity\ServiceModel;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use JetBrains\PhpStorm\Pure;
-use Service\Repository\Contracts\BaseRepositoryContract;
 use Staudenmeir\EloquentHasManyDeep\HasRelationships;
 use Staudenmeir\EloquentJsonRelations\HasJsonRelationships;
 use Znck\Eloquent\Traits\BelongsToThrough;
@@ -30,11 +30,7 @@ trait ScopeHelpers
     use HasModules;
     use HasFranchise;
     use HasFactory;
-
-    /**
-     * @var string|BaseRepositoryContract
-     */
-    protected string|BaseRepositoryContract $modelRepositoryClass;
+    use Uuid;
 
     /**
      * @var string
@@ -52,14 +48,6 @@ trait ScopeHelpers
     public static function map(): string
     {
         return (new static())->map;
-    }
-
-    /**
-     * @return BaseRepositoryContract|string
-     */
-    #[Pure] public static function getModelRepositoryClass(): BaseRepositoryContract|string
-    {
-        return (new static())->modelRepositoryClass ?? '';
     }
 
     /**
