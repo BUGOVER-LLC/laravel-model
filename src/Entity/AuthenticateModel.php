@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Bugover\Model\Entity;
 
 use Bugover\Model\Attribute\ModelEntity;
+use Bugover\Model\Contract\EntityContract;
 use Illuminate\Foundation\Auth\User as Authenticable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Passport\HasApiTokens;
@@ -12,13 +13,13 @@ use Bugover\Model\Traits\ScopeHelpers;
 use Spatie\Permission\Traits\HasRoles;
 
 /**
- * Class ServiceAuthenticable
+ * Class ServiceAuthenticate
  *
  * @package Service\Messenger
  */
 #[\AllowDynamicProperties]
 #[ModelEntity()]
-class ServiceAuthenticable extends Authenticable
+class AuthenticateModel extends Authenticable implements EntityContract
 {
     use ScopeHelpers;
     use HasApiTokens;

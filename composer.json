@@ -28,6 +28,7 @@
   "extra": {
     "laravel": {
       "providers": [
+        "Bugover\\Model\\ModelServiceProvider"
       ]
     }
   },

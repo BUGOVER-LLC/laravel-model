@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Bugover\Model\Entity;
 
 use Bugover\Model\Attribute\ModelEntity;
+use Bugover\Model\Contract\EntityContract;
 use Bugover\Model\Traits\ScopeHelpers;
 use Illuminate\Database\Eloquent\Model;
 
@@ -16,7 +17,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 #[\AllowDynamicProperties]
 #[ModelEntity()]
-class ServiceModel extends Model
+class ServiceModel extends Model implements EntityContract
 {
     use ScopeHelpers;
 
