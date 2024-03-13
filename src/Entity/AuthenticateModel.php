@@ -6,10 +6,10 @@ namespace Bugover\Model\Entity;
 
 use Bugover\Model\Attribute\ModelEntity;
 use Bugover\Model\Contract\EntityContract;
-use Illuminate\Foundation\Auth\User as Authenticable;
+use Bugover\Model\Traits\ScopeHelpers;
+use Illuminate\Foundation\Auth\User as Authenticate;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Passport\HasApiTokens;
-use Bugover\Model\Traits\ScopeHelpers;
 use Spatie\Permission\Traits\HasRoles;
 
 /**
@@ -19,7 +19,7 @@ use Spatie\Permission\Traits\HasRoles;
  */
 #[\AllowDynamicProperties]
 #[ModelEntity()]
-class AuthenticateModel extends Authenticable implements EntityContract
+class AuthenticateModel extends Authenticate implements EntityContract
 {
     use ScopeHelpers;
     use HasApiTokens;
@@ -29,7 +29,7 @@ class AuthenticateModel extends Authenticable implements EntityContract
     /**
      * @var string[]
      */
-    public $socketAuth = [];
+    public array $socketAuth = [];
 
     /**
      * @var string

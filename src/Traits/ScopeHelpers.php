@@ -23,7 +23,6 @@ use function defined;
  */
 trait ScopeHelpers
 {
-    use Touchy;
     use BelongsToThrough;
     use HasJsonRelationships;
     use HasRelationships;

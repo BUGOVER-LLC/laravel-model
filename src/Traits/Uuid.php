@@ -29,8 +29,8 @@ trait Uuid
                 $model->{$model->getKeyName()} = $model->generateUuid();
             }
 
-            if (property_exists($model, 'uuid')) {
-                $model->uuid = $model->generateUuid();
+            if (in_array('uuid', $model->getFillable(), true)) {
+                $model->setAttribute('uuid', $model->generateUuid());
             }
         });
     }
