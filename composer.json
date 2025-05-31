@@ -1,6 +1,6 @@
 {
   "name": "bugover/laravel-model",
-  "version": "5.2.0",
+  "version": "5.3.0",
   "description": "description",
   "minimum-stability": "stable",
   "license": "proprietary",
@@ -13,17 +13,17 @@
   ],
   "require": {
     "php": ">=8.1.1 || <=8.3",
-    "illuminate/database": "^9.0|^10.0|^11.0",
-    "illuminate/notifications": "^9.0|^10.0|^11.0",
-    "staudenmeir/belongs-to-through": "^2.15.1",
-    "staudenmeir/eloquent-json-relations": "^1.10.2",
-    "staudenmeir/eloquent-has-many-deep": "^1.19.4",
+    "illuminate/database": "^9.0|^10.0|^11.0|^12.0",
+    "illuminate/notifications": "^9.0|^10.0|^11.0|^12.0",
+    "staudenmeir/belongs-to-through": "^2.12",
+    "staudenmeir/eloquent-json-relations": "^1.6",
+    "staudenmeir/eloquent-has-many-deep": "^1.15",
     "spatie/laravel-permission": "^6.0.0",
-    "laravel/passport": "^10.0|^11.0|^12.0"
+    "laravel/passport": "^10.0|^11.0|^12.0|^13.0"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
-    "laravel/framework": "^9.0|^10.0|^11.0"
+    "laravel/framework": "^9.0|^10.0|^11.0|^12.0"
   },
   "require_dev": {
   },
@@ -37,6 +37,11 @@
   "autoload": {
     "psr-4": {
       "Bugover\\Model\\": "src/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true
     }
   }
 }
